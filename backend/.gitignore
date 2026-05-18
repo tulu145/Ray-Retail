@@ -1,3 +1,4 @@
 uploads/
 logs/
 *.log
+node_modules/
