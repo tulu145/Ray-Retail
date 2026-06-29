@@ -2216,7 +2216,7 @@ export const Navbar = () => {
               <a href="/products"><ShoppingBag size={16} /> Products</a>
               <a href="/blogs"><FileText size={16} /> Blogs</a>
               <a href="/contact"><Mail size={16} /> Contact</a>
-              <button className="wholesale-btn" onClick={() => window.open("https://rayonewholesale.com", "_blank")}><Building2 size={16} /> Wholesale</button>
+              <button className="wholesale-btn" onClick={() => window.open(import.meta.env.VITE_WHOLESALE_URL, "_blank")}><Building2 size={16} /> Wholesale</button>
               <button onClick={() => navigate("/feedback")}><MessageSquare size={16} /> Feedback</button>
             </div>
           </div>
@@ -2370,7 +2370,7 @@ export const Navbar = () => {
               <a href="/contact">Contact</a>
               <button
                 className="navbar-swanson__wholesale-btn"
-                onClick={() => window.open("https://rayonewholesale.com", "_blank")}
+                onClick={() => window.open(import.meta.env.VITE_WHOLESALE_URL, "_blank")}
               >
                 Wholesale
               </button>
@@ -2447,7 +2447,7 @@ export const Navbar = () => {
                   </button>
                 </div>
 
-                <button className="mobile-menu-wholesaler" onClick={() => { window.open("https://rayonewholesale.com", "_blank"); setIsMobileMenuOpen(false); }}>
+                <button className="mobile-menu-wholesaler" onClick={() => { window.open(import.meta.env.VITE_WHOLESALE_URL, "_blank"); setIsMobileMenuOpen(false); }}>
                   <Building2 size={20} /> Wholesaler Portal
                 </button>
 

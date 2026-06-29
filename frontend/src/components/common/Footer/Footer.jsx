@@ -289,7 +289,7 @@ const Footer = () => {
           <motion.button
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.open("https://rayonewholesale.com", "_blank")}
+            onClick={() => window.open(import.meta.env.VITE_WHOLESALE_URL, "_blank")}
             style={{
               display: "flex",
               alignItems: "center",
